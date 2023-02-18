@@ -8,6 +8,8 @@ This is where you'll find my version of the "GameHub-project" - the brief I chos
 1: create the design in FIGMA for desktop/mobile<br>
 2: coding round 1: code the website with HTML/CSS<br>
 
+-------------------------------------------------------- <br>
+
 <strong>The GameHub Brief:</strong><br>
 
 GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device.<br>
