@@ -6,7 +6,7 @@ This is where you'll find my version of the "GameHub-project" - the brief I chos
 
 <strong>The stages of this project so far:</strong> <br>
 1: create the design in FIGMA for desktop/mobile<br>
-2: coding round 1: code the website with HTML/CSS<br>
+2: coding first round: code the website with HTML/CSS<br>
 
 -------------------------------------------------------- <br>
 
