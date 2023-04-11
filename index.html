@@ -6,47 +6,69 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome to GameHub | Home</title>
 		<meta name="description" content="GameHub the universe of games." />
+		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header>
 			<nav class="menu"><!--NAVIGATION-->
 				<ul>
-					<li><a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub's logo"/></a></li>
-					<li><a href="index.html" class="active"><img src="images\icon_home.svg" class="icon" />Home</a></li>
+					<li><a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo"/></a></li>
+				<!--<li><a href="index.html" class="active"><img src="images\icon_home.svg" class="icon" />Home</a></li>
 					<li><a href="about.html"><img src="images\icon_about.svg" class="icon" />About</a></li>
 					<li><a href="games.html"><img src="images\icon_games.svg" class="icon" />Games</a></li>
 					<li>Search for game here<img src="images\icon_search.svg" class="icon"/></li>
 					<li><a href="signin.html"><img src="images\icon_signin.svg" class="icon" />Sign in</a></li>
-					<li><a href="cart.html"><img src="images\icon_cart.svg" class="icon" />Cart</a></li>
+					<li><a href="cart.html"><img src="images\icon_cart.svg" class="icon" />Cart</a></li> -->
+					<li><a href="index.html" class="active"><iconify-icon icon="ic:baseline-home" width="2em" class="icon"></iconify-icon>Home</a></li>
+					<li><a href="about.html"><iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>About</a></li>
+					<li><a href="games.html"><iconify-icon icon="cil:gamepad" width="2em" class="icon"></iconify-icon>Games</a></li>
+					<li><iconify-icon icon="ic:baseline-search" width="2em" class="icon"></iconify-icon>Search for game here</li>
+					<li><a href="signin.html"><iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>Sign in</a></li>
+					<li><a href="cart.html"><iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>Cart</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<!--HERO BANNNER (Desktop)-->
-			<img
+			<div class="hero_banner">
+				<p>Adventure awaits, it's gametime!</p>
+				<button class="button_white"><a href="games.html">Adventure games</a></button>
+				<button class="button_white"><a href="games.html">Action games</a></button>
+				<button class="button_white"><a href="games.html">Family games</a></button>
+				<button class="button_white"><a href="games.html">Sports games</a></button>
+			</div>
+			<!--<img class="hero_banner"
 				src="images\hero_banner_assasin-creed-valhalla.jpg"
-				alt="A warrior standing on a hill looking over a village in Assasins Creed Valhalla"/>
+				alt="A warrior standing on a hill looking over a village in Assasins Creed Valhalla"/>-->
+
+				
 			<p>Popular right now</p>
 			<section><!-- INSERT ALL THE GAMECARDS HERE -->
                 <!--insert game 1, 2, 3-->
                 <!--insert game 4, 5, 6-->
             </section>
-            <button>View all games</button>
+            <button class="button_white"><a href="games.html">Take me to all the games</a></button>
 		</main>
 		<footer>
-			<ul>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="contact.html">Contact us</a></li>
-			</ul>
+				<ul>
+					<li><a href="faq.html"><iconify-icon icon="ph:book-bookmark" width="2em" class="icon"></iconify-icon>FAQ</a></li>
+					<li><a href="contact.html"><iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em" class="icon"></iconify-icon>Contact us</a></li>Connect with the community
+					<a href=""><li><iconify-icon icon="ic:baseline-discord" width="2em" class="icon"></iconify-icon></li>
+					<li><iconify-icon icon="mdi:twitch" width="2em" class="icon"></iconify-icon></li>
+					<li><iconify-icon icon="mdi:instagram" width="2em" class="icon" ></iconify-icon></li>
+					<li><iconify-icon icon="ic:baseline-tiktok" width="2em" class="icon" ></iconify-icon></li></a>
+				</ul>
 
-			<small>Copyright &copy; HelChris_2023</small>
+				<p><small>Copyright &copy; HelChris_2023</small></p>
 		</footer>
 	</body>
+
 </html>

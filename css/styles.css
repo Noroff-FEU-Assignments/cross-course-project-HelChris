@@ -6,50 +6,110 @@ h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .gamecard {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-body, .icon {
-    font-family: Tahoma, Geneva, Verdana, sans-serif
+/* Buttons*/
+.button_white {
+    background-color: #FFFFFF;
+    color: #1B1F3C;
+    border-color: #59BED3;
+    border-width: 0.2em;
+    font-family: tahoma, verdana,sans-serif;
+    text-align: center;
+    font-size: 1em;
+    line-height: 120%;
+    border-radius: 7em;
+    border-style: solid;
 }
 
+.button_white :hover {
+    text-decoration: underline;
+    box-shadow: 4px #1B1F3C;
+
+}
+
+
+.button_turquoise {
+    background-color: #59BED3;
+    color: #1B1F3C;
+    border-width: 0.2em;
+    font-family: tahoma, verdana,sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+/*Navigation*/
 nav, a, li {
     display: inline-block;
-    color: black;
     text-decoration: none;
     list-style-type: none;
     padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+ nav ul li a:hover, li:hover {
+    color: #59BED3;
+    text-decoration: underline;
+} 
+
+/* Hero Banner */
+.hero_banner {
+    background-image: url(../images/hero_banner_assasin-creed-valhalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+}
+
+.hero_banner p {
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    padding-top: 220px;
+}
+
+
+/*Footer*/
+footer {
+    background-image: url(../images/footer_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+footer li {
+    display:inline-block;
+    text-decoration: none;
+}
+
+footer li a:hover {
+color:darkcyan;
+text-decoration: underline;
 }
 
 .icon {
-    height: 40px;
-    width: 40px;
-    color: black;
+    display:flow-root;
 }
 
-li:hover, a:hover {
-    color: #59BED3;
-    text-decoration: underline;
-}
-
-.icon:hover  {
-    color: #59BED3;
-}
-
-.active {
-    text-decoration: underline;
-
-}
-
+/*
 body {
     font-family: "georgia", verdana, sans-serif;
 }
-
-
-footer a {
-    text-decoration: none;
-    padding: 20px;
+body, .icon {
+    font-family: Tahoma, Geneva, Verdana, sans-serif
 }
-
-font-family: 'Nunito Sans', sans-serif;
+*/
