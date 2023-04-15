@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    margin: 2em;
+}
+
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -26,25 +30,31 @@ h1, h2, h3 {
     line-height: 120%;
     border-radius: 7em;
     border-style: solid;
+    margin: 1em;
 }
 
 .button_white :hover {
     text-decoration: underline;
-    box-shadow: 4px #1B1F3C;
-
 }
 
 
 .button_turquoise {
     background-color: #59BED3;
     color: #1B1F3C;
-    border-width: 0.2em;
+    border-style: none;
+    border-radius: 7em;
     font-family: tahoma, verdana,sans-serif;
     text-align: center;
     font-size: 1em;
     font-weight: bold;
     line-height: 120%;
+    margin: 1em;
 }
+.button_turquoise :hover {
+    text-decoration: underline;
+    box-shadow: 4px #1B1F3C;
+}
+
 
 /*Navigation*/
 nav, a, li {
@@ -80,6 +90,9 @@ nav, a, li {
     padding-top: 220px;
 }
 
+.gamehub_logobanner_small {
+    width: 100%;
+}
 
 /*Footer*/
 footer {
@@ -105,11 +118,16 @@ text-decoration: underline;
     display:flow-root;
 }
 
-/*
-body {
-    font-family: "georgia", verdana, sans-serif;
+/* Games.html */
+.game_category_banner {
+background-image: url(../images/banner_turkis_smal.jpg);
+background-repeat: no-repeat;
+text-align: left;
+background-size: cover;
+padding-top: 0.5em;
+padding-left: 1em;
 }
-body, .icon {
-    font-family: Tahoma, Geneva, Verdana, sans-serif
+
+.category_navigation {
+    text-align: center;
 }
-*/
