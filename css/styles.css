@@ -125,9 +125,15 @@ background-repeat: no-repeat;
 text-align: left;
 background-size: cover;
 padding-top: 0.5em;
-padding-left: 1em;
+padding-left: 3em;
 }
 
 .category_navigation {
     text-align: center;
+}
+
+.game_card {
+    display: inline-table;
+    padding: 1em;
+    margin-left: 3em;
 }
