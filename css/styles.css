@@ -14,6 +14,10 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
+.popular {
+    text-align: center;
+}
+
 .gamecard {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -136,4 +140,7 @@ padding-left: 3em;
     display: inline-table;
     padding: 1em;
     margin-left: 3em;
+    max-width: 299px;
+    max-height: 398px;
+    object-fit: cover;
 }
