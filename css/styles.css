@@ -3,12 +3,13 @@ html {
 }
 
 main {
-    margin: 2em;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .active {
     text-decoration: underline;
@@ -26,37 +27,38 @@ h1, h2, h3 {
 .button_white {
     background-color: #FFFFFF;
     color: #1B1F3C;
-    border-color: #59BED3;
-    border-width: 0.2em;
-    font-family: tahoma, verdana,sans-serif;
     text-align: center;
-    font-size: 1em;
-    line-height: 120%;
-    border-radius: 7em;
+    border-color: #59BED3;
+    border-width: 0.2rem;
+    border-radius: 7rem;
     border-style: solid;
-    margin: 1em;
+    font-family: tahoma, verdana,sans-serif;
+    font-size: 1rem;
+    line-height: 120%;
+    margin: 1rem;
+    padding: 0.5rem;
 }
-
 .button_white :hover {
     text-decoration: underline;
 }
-
 
 .button_turquoise {
     background-color: #59BED3;
     color: #1B1F3C;
     border-style: none;
-    border-radius: 7em;
+    border-width: 0.2rem;
+    border-radius: 7rem;
     font-family: tahoma, verdana,sans-serif;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 120%;
-    margin: 1em;
+    margin: 1rem;
+    /* padding: 0.8rem; */
 }
 .button_turquoise :hover {
     text-decoration: underline;
-    box-shadow: 4px #1B1F3C;
+    /* box-shadow: 1em #1B1F3C; */
 }
 
 
@@ -87,11 +89,11 @@ nav, a, li {
 .hero_banner p {
     text-transform:uppercase;
     font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF;
-    padding-top: 220px;
+    padding-top: 12rem;
 }
 
 .gamehub_logobanner_small {
@@ -114,23 +116,30 @@ footer li {
 }
 
 footer li a:hover {
-color:darkcyan;
-text-decoration: underline;
+    color:darkcyan;
+    text-decoration: underline;
 }
 
 .icon {
     display:flow-root;
 }
 
+/*Site specific css:::::: */
+
 /* Games.html */
 .game_category_banner {
-background-image: url(../images/banner_turkis_smal.jpg);
-background-repeat: no-repeat;
-text-align: left;
-background-size: cover;
-padding-top: 0.5em;
-padding-left: 3em;
+    background-image: url(../images/banner_turkis_smal.jpg);
+    background-repeat: no-repeat;  
+    text-align: left;
+    background-size: cover;
+    padding-top: 0.5em;
+    padding-left: 3em;
 }
+
+.product_list {
+    width: 100%;
+    margin: 0 auto;
+} 
 
 .category_navigation {
     text-align: center;
