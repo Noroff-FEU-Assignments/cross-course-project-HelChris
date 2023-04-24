@@ -3,7 +3,7 @@ html {
 }
 
 main {
-    margin: 0 auto;
+
 }
 
 h1, h2, h3 {
@@ -36,7 +36,7 @@ h1, h2, h3 {
     font-size: 1rem;
     line-height: 120%;
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
 }
 .button_white :hover {
     text-decoration: underline;
@@ -54,7 +54,7 @@ h1, h2, h3 {
     font-weight: bold;
     line-height: 120%;
     margin: 1rem;
-    /* padding: 0.8rem; */
+    padding: 0.8rem;
 }
 .button_turquoise :hover {
     text-decoration: underline;
@@ -63,11 +63,19 @@ h1, h2, h3 {
 
 
 /*Navigation*/
-nav, a, li {
+nav, li {
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
     padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
     color: black;
     text-align: center;
 }
@@ -137,8 +145,13 @@ footer li a:hover {
 }
 
 .product_list {
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));;
+    gap: 25px;
+    row-gap: 0px;
+    margin: 25px; 
+    align-content: center;
 } 
 
 .category_navigation {
@@ -152,4 +165,30 @@ footer li a:hover {
     max-width: 299px;
     max-height: 398px;
     object-fit: cover;
+}
+
+/* cart.html */
+
+.cart-h1 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F0CA00;
+    font-size: large;
+    letter-spacing: 0.2rem;
+}
+
+
+
+/* signin.html */
+
+.h1-welcome {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F0CA00;
+}
+
+/* success.html */
+.success-icon {
+  
 }
