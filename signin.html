@@ -23,31 +23,34 @@
 					<li><a href="index.html"><iconify-icon icon="ic:baseline-home" width="2em" class="icon"></iconify-icon>Home</a></li>
 					<li><a href="about.html"><iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>About</a></li>
 					<li><a href="games.html"><iconify-icon icon="cil:gamepad" width="2em" class="icon"></iconify-icon>Games</a></li>
-					<li><iconify-icon icon="ic:baseline-search" width="2em" class="icon"></iconify-icon>Search for game here</li>
+					<li><input type="search" id="site-search" name="q" placeholder="Search for game here"  class="search_field"><button class="search_button"><iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon></button></li>
 					<li><a href="signin.html" class="active"><iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>Sign in</a></li>
 					<li><a href="cart.html"><iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>Cart</a></li>
 				</ul>
 			</nav>
 		</header>
         <main>
-			<h1 class="h1-welcome">Welcome</h1>
-			<p>If you're registered with email and password you can log in here and gain access to order history, your wishlist and more.</p>
-			<h3>SIGN IN</h3>
-			<form>
-				<p>Username:
-					<input type="text" name="username" /></p>
-				<p>Password:
-					<input type="password" name="password" /></p>
-					<p>Forgotten password? click here.</p>
-				<button class="button_turquoise"><a href="signin.html" class="cta">Log in</button></a>
-				<button class="button_white">Create account</button>
-			</form>
+			<div class="center_wrapper">
+				<h1 class="h1-welcome">Welcome</h1>
+				<p>If you're registered with email and password you can log in here and gain access to order history, your wishlist and more.</p>
+				<h3>SIGN IN</h3>
+				<form>
+					<p>Username:</p>
+						<input type="text" name="username" class="form_input" required/></p>
+					<p>Password:</p>
+						<input type="password" name="password" class="form_input" required/></p>
+						<a href="signin.html"><p class="forgotten_password">Forgotten password? click here.</p></a>
+					<div>
+						<button class="button_turquoise"><a href="signin.html" class="cta">Log in</button></a>
+						<button class="button_white"><a href="signin.html" class="cta">Create account</button></a>
+					</div>
+				</form>
+			</div>
         </main>
     
     </body>
 	<footer>
 		<ul>
-			<li><a href="faq.html"><iconify-icon icon="ph:book-bookmark" width="2em" class="icon"></iconify-icon>FAQ</a></li>
 			<li><a href="contact.html"><iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em" class="icon"></iconify-icon>Contact us</a></li>Connect with the community
 			<a href=""><li><iconify-icon icon="ic:baseline-discord" width="2em" class="icon"></iconify-icon></li>
 			<li><iconify-icon icon="mdi:twitch" width="2em" class="icon"></iconify-icon></li>

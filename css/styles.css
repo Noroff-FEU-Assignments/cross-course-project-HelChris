@@ -2,14 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-
-}
-
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.content-wrapper {
+    /* margin: 0 auto; */
+}
 
 .active {
     text-decoration: underline;
@@ -38,6 +37,7 @@ h1, h2, h3 {
     margin: 1rem;
     padding: 0.8rem;
 }
+
 .button_white :hover {
     text-decoration: underline;
 }
@@ -56,11 +56,37 @@ h1, h2, h3 {
     margin: 1rem;
     padding: 0.8rem;
 }
+
 .button_turquoise :hover {
     text-decoration: underline;
-    /* box-shadow: 1em #1B1F3C; */
 }
 
+.search_button {
+   border: none;
+   background-color: white;
+}
+
+.search_field {
+    background-color: #EFF9FB;
+    border: none;
+    border-radius: 40px;
+    line-height: 2.5em;
+    text-align: left;
+    padding-left: 0.8rem;
+    margin-right: 0.1rem;
+}
+
+.form_input {
+    background-color: #B2DCDD;
+    border: none;
+    border-radius: 0px;
+    line-height: 2.5em;
+    text-align: left;
+    padding-left: 0.8rem;
+    margin: 0.5rem;
+    margin-right: 0.1rem;
+    
+}
 
 /*Navigation*/
 nav, li {
@@ -146,12 +172,8 @@ footer li a:hover {
 
 .product_list {
     max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0,1fr));;
-    gap: 25px;
-    row-gap: 0px;
-    margin: 25px; 
-    align-content: center;
+    /* margin: 0 auto; */
+
 } 
 
 .category_navigation {
@@ -160,8 +182,8 @@ footer li a:hover {
 
 .game_card {
     display: inline-table;
+    /* margin: 0 auto; */
     padding: 1em;
-    margin-left: 3em;
     max-width: 299px;
     max-height: 398px;
     object-fit: cover;
@@ -188,7 +210,15 @@ footer li a:hover {
     text-decoration-color: #F0CA00;
 }
 
-/* success.html */
-.success-icon {
-  
+.forgotten_password {
+    text-decoration: underline;
 }
+
+.center_wrapper {
+    margin: 0 auto;
+}
+
+/* payment.html */
+
+
+/* success.html */

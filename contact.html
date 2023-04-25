@@ -23,7 +23,7 @@
 					<li><a href="index.html"><iconify-icon icon="ic:baseline-home" width="2em" class="icon"></iconify-icon>Home</a></li>
 					<li><a href="about.html"><iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>About</a></li>
 					<li><a href="games.html"><iconify-icon icon="cil:gamepad" width="2em" class="icon"></iconify-icon>Games</a></li>
-					<li><iconify-icon icon="ic:baseline-search" width="2em" class="icon"></iconify-icon>Search for game here</li>
+					<li><input type="search" id="site-search" name="q" placeholder="Search for game here"  class="search_field"><button class="search_button"><iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon></button></li>
 					<li><a href="signin.html"><iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>Sign in</a></li>
 					<li><a href="cart.html"><iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>Cart</a></li>
 				</ul>
@@ -41,23 +41,23 @@
 				<img src="/images/image_contact-us.jpg" alt="gamers keyboard with pink and turqouise light"/>
 			</section>
 			<section class="contact_form>
-				<form action="" method="get" class="contact_form">
-					<div class="contact_form">
+				<form>
+					<div>
 						<label for="name">Name:</label>
-						<input type="text" name="name" id="name" required>
+						<input type="text" name="name" id="name" class="form_input" required />
 					</div>
-					<div class="contact_form">
+					<div>
 						<label for="email">Email:</label>
-						<input type="email" name="email" id="email" required>
+						<input type="email" name="email" id="email" class="form_input required />
 					</div>
-					<div class="contact_form">
+					<div>
 						<label for="message">Message:</label>
-						<input type="text" name="message" id="message" required>
+						<input type="text" name="message" id="message" class="form_input required />
 					</div>
-					<div class="contact_form">
+					<div>
 						<input class="contact-checkbox" type="checkbox" id="checkbox" />
 						<label for="checkbox">Yes, I would like to subscribe to GameHub's newsletter!</label>
-						<button class="button_white">Send</button>
+						<button class="button_white"><a href="contact.html">Send</button></a>
 					</div>
 				</form>
 			</section>
@@ -66,7 +66,6 @@
     </body>
 	<footer>
 		<ul>
-			<li><a href="faq.html"><iconify-icon icon="ph:book-bookmark" width="2em" class="icon"></iconify-icon>FAQ</a></li>
 			<li><a href="contact.html" class="active"><iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em" class="icon"></iconify-icon>Contact us</a></li>Connect with the community
 			<a href=""><li><iconify-icon icon="ic:baseline-discord" width="2em" class="icon"></iconify-icon></li>
 			<li><iconify-icon icon="mdi:twitch" width="2em" class="icon"></iconify-icon></li>
