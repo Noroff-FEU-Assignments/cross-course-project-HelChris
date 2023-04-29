@@ -12,35 +12,65 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
 			rel="stylesheet"/>
-
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header>
-			<nav class="menu"><!--NAVIGATION-->
-				<ul>
-					<li><a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo"/></a></li>
-					<li><a href="index.html" class="active"><iconify-icon icon="ic:baseline-home" width="2em" class="icon"></iconify-icon>Home</a></li>
-					<li><a href="about.html"><iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>About</a></li>
-					<li><a href="games.html"><iconify-icon icon="cil:gamepad" width="2em" class="icon"></iconify-icon>Games</a></li>
-					<li><input type="search" id="site-search" name="q" placeholder="Search for game here"  class="search_field"><button class="search_button"><iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon></button></li>
-					<li><a href="signin.html"><iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>Sign in</a></li>
-					<li><a href="cart.html"><iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>Cart</a></li>
+            <ul class="nav">
+              <li>
+					<figure>
+						<a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo" /></a>
+					</figure>
+				</li>
+              <li>
+                <div class="search-container">
+                  <input type="search" id="site-search" name="q" placeholder="Search for game here" class="search_field">
+                  <button class="search_button">
+                    <iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <a href="signin.html" class="nav-item">
+                  <iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>
+                  <span class="text">Sign in</span>
+                </a>
+              </li>
+              <li>
+                <a href="cart.html" class="nav-item">
+                  <iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>
+                  <span class="text">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </header>
+
+
+
+
+
+		<!-- <header>
+			<nav>
+				<ul class="nav">
+					<li><figure><a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo"/></a></figure></li>
+					<li><input type="search" id="site-search" name="q" placeholder="Search for game here" class="search search_field"><button class="search search_button"><iconify-icon icon="ic:outline-search" class="search" width="3em"></iconify-icon></button></li>
+					<li><a href="signin.html" nav-item><iconify-icon icon="mdi:user" width="2em"></iconify-icon>Sign in</a></li>
+					<li><a href="cart.html" nav-item><iconify-icon icon="ic:baseline-shopping-cart" width="2em"></iconify-icon>Cart</a>
 				</ul>
 			</nav>
-		</header>
+		</header>  -->
 		<main>
 			<!--HERO BANNNER (Desktop)-->
 			<div class="hero_banner">
-				<p>Adventure awaits, it's gametime!</p>
-				<button class="button_white"><a href="games.html">Adventure games</a></button>
-				<button class="button_white"><a href="games.html">Action games</a></button>
-				<button class="button_white"><a href="games.html">Family games</a></button>
-				<button class="button_white"><a href="games.html">Sports games</a></button>
+				<h1 class="heroh1">Adventure awaits, it's gametime!</h1>
+				<a href="games.html" class="button button_white">Adventure games</a>
+                <a href="games.html" class="button button_white">Action games</a>
+                <a href="games.html" class="button button_white">Family games</a>
+                <a href="games.html" class="button button_white">Sports games</a>
 			</div>
 			<section class="popular">
+				<h2>POPULAR RIGHT NOW</h2>
 				<img class="gamehub_logobanner_small" src="/images/gamehub_universe_of_games_banner_small.jpg" alt="GameHub, The universe of games"/>
-				<h1>POPULAR RIGHT NOW</h1>
 			</section>
 			<section class="product_list">
 				<div class="game_card">
@@ -48,21 +78,21 @@
 					<h2>Forge Legend</h2>
 					<p>$29.99</p>
 					<p class="game_category">Adventure</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 				</div>
 				<div class="game_card">
 					<a href="gamedetail.html"><img src="/images/game_black.png" alt="" /></a>
 					<h2>Black</h2>
 					<p>$29.99</p>
 					<p class="game_category">Action</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 				</div>
 				<div class="game_card">
 					<a href="gamedetail.html"><img src="/images/game_racing.png" alt="" /></a>
 					<h2>Racing</h2>
 					<p>$29.99</p>
 					<p class="game_category">Sport</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 				</div>
 			</section>
 			<section class="product_list">
@@ -71,32 +101,53 @@
 					<h2>Elden Ring</h2>
 					<p>$29.99</p>
 					<p class="game_category">Adventure, Action</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 				</div>
 				<div class="game_card">
 					<a href="gamedetail.html"><img src="/images/game_gran-turismo.jpg" alt="" /></a>
 					<h2>Gran Turismo 7</h2>
 					<p>$29.99</p>
 					<p class="game_category">Sport</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 				</div>
 				<div class="game_card">
 					<a href="gamedetail.html"><img src="/images/game_tales-of-arise.jpg" alt="" /></a>
 					<h2>Tales of Arise</h2>
 					<p>$29.99</p>
 					<p class="game_category">Adventure, Action</p>
-					<button class="button_turquoise"><a href="cart.html" class="cta">Add to cart</a></button>
+					<a href="cart.html" class="button button_turquoise" class="cta">Add to cart</a>
 			  	</div>
 			</section>
-            <button class="button_white"><a href="games.html">Take me to all the games</a></button>
+           <section class="allgames_button">
+				<a href="games.html" class="button button_white">Take me to all the games</a>
+			</section>
 		</main>
 		<footer>
-				<ul>
-					<li><a href="contact.html"><iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em" class="icon"></iconify-icon>Contact us</a></li>Connect with the community
-					<a href=""><li><iconify-icon icon="ic:baseline-discord" width="2em" class="icon"></iconify-icon></li>
-					<li><iconify-icon icon="mdi:twitch" width="2em" class="icon"></iconify-icon></li>
-					<li><iconify-icon icon="mdi:instagram" width="2em" class="icon" ></iconify-icon></li>
-					<li><iconify-icon icon="ic:baseline-tiktok" width="2em" class="icon" ></iconify-icon></li></a>
+				<ul class="footer_nav">
+					<li>
+						<a href="about.html" class="nav-item">
+						  <iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>
+						  <span class="text">About</span>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-item">
+							<iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em"></iconify-icon><span class="text">Contact us</span>
+						</a>
+					</li>
+					<li>
+						<div class="some">
+							<a href="https://www.twitch.tv/"><iconify-icon icon="mdi:twitch" width="2em"></iconify-icon>
+							</a>
+							<a href="https://www.instagram.com/"><iconify-icon icon="mdi:instagram" width="2em"></iconify-icon>
+							</a>
+							<a href="https://www.tiktok.com/"><iconify-icon icon="ic:baseline-tiktok" width="2em"></iconify-icon>
+							</a>
+							<a href="https://discord.com/"><iconify-icon icon="ic:baseline-discord" width="2em"></iconify-icon>
+							</a>
+						</div>
+						<span class="text">Connect with the community</span>
+					</li>
 				</ul>
 
 				<p><small>Copyright &copy; Game Hub 2023</small></p>
