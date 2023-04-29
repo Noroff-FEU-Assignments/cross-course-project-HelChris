@@ -1,79 +1,137 @@
+@font-face {
+    font-family: kingdom;
+    src: local(kingdom),
+    url("../fonts/kingdom.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: AzeretMono-Light;
+    src: local(AzeretMono-Light),
+    url("../fonts/AzeretMono-Light.ttf") format("truetype");
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: kingdom;
 }
 
-.content-wrapper {
-    /* margin: 0 auto; */
+p {
+    font-family: AzeretMono-Light;
 }
+
+/* NAV */
+.nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav-item .some {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 0.5em;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    
+  }
+
+.nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 0.5em;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+nav a {
+    padding: 0.2rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+ nav a:hover, li:hover {
+    color: #59BED3;
+    text-decoration: underline;
+} 
+
+.search_button {
+    border: none;
+    background-color: white;
+ }
+ 
+ .search_field {
+     background-color: #EFF9FB;
+     border: none;
+     border-radius: 40px;
+     line-height: 2.5em;
+     text-align: left;
+     padding-left: 0.8rem;
+     margin-right: 0.1rem;
+ }
+ 
 
 .active {
     text-decoration: underline;
 }
 
-.popular {
-    text-align: center;
-}
-
-.gamecard {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 /* Buttons*/
+.button {
+    border-width: 0.2rem;
+    border-radius: 7rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 120%;
+    margin-top: 2em;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
 .button_white {
     background-color: #FFFFFF;
     color: #1B1F3C;
-    text-align: center;
     border-color: #59BED3;
-    border-width: 0.2rem;
-    border-radius: 7rem;
     border-style: solid;
-    font-family: tahoma, verdana,sans-serif;
-    font-size: 1rem;
-    line-height: 120%;
-    margin: 1rem;
-    padding: 0.8rem;
-}
-
-.button_white :hover {
-    text-decoration: underline;
 }
 
 .button_turquoise {
     background-color: #59BED3;
     color: #1B1F3C;
     border-style: none;
-    border-width: 0.2rem;
-    border-radius: 7rem;
-    font-family: tahoma, verdana,sans-serif;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 120%;
-    margin: 1rem;
-    padding: 0.8rem;
-}
-
-.button_turquoise :hover {
-    text-decoration: underline;
-}
-
-.search_button {
-   border: none;
-   background-color: white;
-}
-
-.search_field {
-    background-color: #EFF9FB;
-    border: none;
-    border-radius: 40px;
-    line-height: 2.5em;
-    text-align: left;
-    padding-left: 0.8rem;
-    margin-right: 0.1rem;
 }
 
 .form_input {
@@ -88,36 +146,20 @@ h1, h2, h3 {
     
 }
 
-/*Navigation*/
-nav, li {
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px;
-    color: black;
-    text-align: center;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    text-align: center;
-}
-
- nav ul li a:hover, li:hover {
-    color: #59BED3;
-    text-decoration: underline;
-} 
-
 /* Hero Banner */
+.heroh1 {
+    color: white;
+    position: center;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+}
+
 .hero_banner {
     background-image: url(../images/hero_banner_assasin-creed-valhalla.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: 600px;
+    min-height: 600px;
 }
 
 .hero_banner p {
@@ -125,14 +167,10 @@ a {
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #FFFFFF;
     padding-top: 12rem;
 }
 
-.gamehub_logobanner_small {
-    width: 100%;
-}
 
 /*Footer*/
 footer {
@@ -142,6 +180,7 @@ footer {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;
+    text-decoration: none;
 }
 
 footer li {
@@ -154,13 +193,22 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-.icon {
-    display:flow-root;
+.footer_nav a {
+    text-decoration: none;
+    color:black; 
 }
 
 /*Site specific css:::::: */
 
-/* Games.html */
+/* index.html and games.html*/
+.gamehub_logobanner_small {
+    width: 100%;
+}
+
+.popular {
+    text-align: center;
+}
+
 .game_category_banner {
     background-image: url(../images/banner_turkis_smal.jpg);
     background-repeat: no-repeat;  
@@ -182,11 +230,15 @@ footer li a:hover {
 
 .game_card {
     display: inline-table;
-    /* margin: 0 auto; */
     padding: 1em;
     max-width: 299px;
     max-height: 398px;
     object-fit: cover;
+    margin: 1em;
+}
+
+.allgames_button {
+    padding: 2em;
 }
 
 /* cart.html */
@@ -214,9 +266,6 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-.center_wrapper {
-    margin: 0 auto;
-}
 
 /* payment.html */
 
