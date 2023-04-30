@@ -33,27 +33,13 @@ p {
     text-decoration: none;
   }
   
-  .nav-item .some {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    padding: 0 0.5em;
-  }
   
-  .search-container {
+  .search-container .nav {
     display: flex;
     align-items: center;
-    
   }
 
-.nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  
+
   .nav-item {
     display: flex;
     flex-direction: column;
@@ -76,7 +62,6 @@ nav a {
     text-align: center;
     text-decoration: none;
     list-style-type: none;
-    color: black;
 }
 
  nav a:hover, li:hover {
@@ -112,9 +97,9 @@ nav a {
     font-size: 1rem;
     font-weight: bold;
     line-height: 120%;
-    margin-top: 2em;
     padding: 0.8rem;
     text-decoration: none;
+    
 }
 
 .button:hover {
@@ -220,8 +205,6 @@ footer li a:hover {
 
 .product_list {
     max-width: 100%;
-    /* margin: 0 auto; */
-
 } 
 
 .category_navigation {
@@ -241,6 +224,10 @@ footer li a:hover {
     padding: 2em;
 }
 
+/* gamedetail.html */
+
+
+
 /* cart.html */
 
 .cart-h1 {
@@ -253,6 +240,13 @@ footer li a:hover {
 }
 
 
+/* payment.html */
+.checkout-buttons, .cart-buttons, .success-button, .signin-buttons {
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+}
+
+/* success.html */
 
 /* signin.html */
 
@@ -267,7 +261,14 @@ footer li a:hover {
 }
 
 
-/* payment.html */
+/* about.html */ 
+
+.about_some {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+}
 
 
-/* success.html */
+/* contact.html */ 
+
