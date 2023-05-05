@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome to GameHub | Home</title>
 		<meta name="description" content="GameHub the universe of games." />
@@ -16,42 +16,40 @@
 	</head>
 	<body>
 		<header>
-            <ul class="nav">
-              <li>
+            <div class="nav">
 					<figure>
 						<a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo" /></a>
 					</figure>
-				</li>
-              <li>
-                <div class="search-container">
-                  <input type="search" id="site-search" name="q" placeholder="Search for game here" class="search_field">
-                  <button class="search_button">
-                    <iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <a href="signin.html" class="nav-item">
-                  <iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>
-                  <span class="text">Sign in</span>
-                </a>
-              </li>
-              <li>
-                <a href="cart.html" class="nav-item">
-                  <iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>
-                  <span class="text">Cart</span>
-                </a>
-              </li>
-            </ul>
+              <div class="header-items">
+				  <div class="search-container">
+					<input type="search" id="site-search" name="q" placeholder="Search for game here" class="search_field">
+					<button class="search_button">
+					  <iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon>
+					</button>
+				  </div>
+				<nav class="nav-items">
+				  <a href="signin.html" class="nav-item">
+					<iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>
+					<span class="text">Sign in</span>
+				  </a>
+				  <a href="cart.html" class="nav-item">
+					<iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>
+					<span class="text">Cart</span>
+				  </a>
+				</nav>
+			  </div>
+            </div>
           </header>
 		<main>
 			<!--HERO BANNNER (Desktop)-->
 			<div class="hero_banner">
 				<h1 class="heroh1">Adventure awaits, it's gametime!</h1>
-				<a href="games.html" class="button button_white">Adventure games</a>
-                <a href="games.html" class="button button_white">Action games</a>
-                <a href="games.html" class="button button_white">Family games</a>
-                <a href="games.html" class="button button_white">Sports games</a>
+				<div class="hero_button_container">
+					<a href="games.html" class="button button_white">Adventure games</a>
+									<a href="games.html" class="button button_white">Action games</a>
+									<a href="games.html" class="button button_white">Family games</a>
+									<a href="games.html" class="button button_white">Sports games</a>
+				</div>
 			</div>
 			<section class="popular">
 				<h2>POPULAR RIGHT NOW</h2>
