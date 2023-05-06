@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Welcome to GameHub | Sign in</title>
-		<meta name="description" content="GameHub the universe of games." />
+		<meta name="description" content="GameHub, sign in" />
 		<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,37 +16,46 @@
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
     <body>
-        <header>
-            <ul class="nav">
-              <li>
-					<figure>
-						<a href="index.html"><img class="logo" src="images\gamehublogo_243x149.svg" alt="GameHub logo" /></a>
-					</figure>
-				</li>
-              <li>
-                <div class="search-container">
-                  <input type="search" id="site-search" name="q" placeholder="Search for game here" class="search_field">
-                  <button class="search_button">
-                    <iconify-icon icon="ic:outline-search" width="2.5em" class="icon"></iconify-icon>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <a href="signin.html" class="nav-item">
-                  <iconify-icon icon="mdi:user" width="2em" class="icon"></iconify-icon>
-                  <span class="text">Sign in</span>
-                </a>
-              </li>
-              <li>
-                <a href="cart.html" class="nav-item">
-                  <iconify-icon icon="ic:baseline-shopping-cart" width="2em" class="icon"></iconify-icon>
-                  <span class="text">Cart</span>
-                </a>
-              </li>
-            </ul>
-          </header>
+		<header>
+			<div class="nav">
+				<figure>
+					<a href="index.html"><img src="images/GameHub_logo_Sky.png" class="logo" src="" alt="GameHub logo" /></a>
+				</figure>
+				<div class="header-items">
+					<nav class="nav-items">
+						<a href="about.html" class="nav-item">
+							<div class="icon"><iconify-icon icon="mdi:account-box"></iconify-icon></div>
+							<span class="text">About</span>
+						</a>
+						<a href="contact.html" class="nav-item">
+							<div class="icon"><iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane"></iconify-icon></div>
+							<span class="text">Contact</span>
+						</a>
+						<a href="games.html" class="nav-item">
+							<div class="icon"><iconify-icon icon="cil:gamepad"></iconify-icon></div>
+							<span class="text">Games</span>
+						</a>
+						<a href="signin.html" class="nav-item">
+							<div class="icon"><iconify-icon icon="mdi:user"></iconify-icon></div>
+							<span class="text">Sign in</span>
+						</a>
+						<a href="cart.html" class="nav-item">
+							<div class="icon"><iconify-icon icon="ic:baseline-shopping-cart"></iconify-icon></div>
+							<span class="text">Cart</span>
+						</a>
+					</nav>
+					<div class="search-container">
+						<input type="search" id="site-search" name="q" placeholder="Search for game here"
+							class="search_field">
+						<button class="search_button">
+							<div class="icon"><iconify-icon icon="ic:outline-search"></iconify-icon></div>
+						</button>
+					</div>
+					<a class="hamburger">HAM</a>
+				</div>
+		</header>
         <main>
-			<div class="center_wrapper">
+			<div class="sign-in-page">
 				<h1 class="h1-welcome">Welcome</h1>
 				<p>If you're registered with email and password you can log in here and gain access to order history, your wishlist and more.</p>
 				<h3>SIGN IN</h3>
@@ -63,37 +72,24 @@
 				</form>
 			</div>
         </main>
-    
-    </body>
-	<footer>
-		<ul class="footer_nav">
-			<li>
-				<a href="about.html" class="nav-item">
-				  <iconify-icon icon="mdi:contact" width="2em" class="icon"></iconify-icon>
-				  <span class="text">About</span>
-				</a>
-			</li>
-			<li>
-				<a href="contact.html" class="nav-item">
-					<iconify-icon icon="streamline:mail-send-email-send-email-paper-airplane" width="2em"></iconify-icon><span class="text">Contact us</span>
-				</a>
-			</li>
-			<li>
-				<div class="some">
-					<a href="https://www.twitch.tv/"><iconify-icon icon="mdi:twitch" width="2em"></iconify-icon>
-					</a>
-					<a href="https://www.instagram.com/"><iconify-icon icon="mdi:instagram" width="2em"></iconify-icon>
-					</a>
-					<a href="https://www.tiktok.com/"><iconify-icon icon="ic:baseline-tiktok" width="2em"></iconify-icon>
-					</a>
-					<a href="https://discord.com/"><iconify-icon icon="ic:baseline-discord" width="2em"></iconify-icon>
-					</a>
-				</div>
-				<span class="text">Connect with the community</span>
-			</li>
-		</ul>
-
-		<p><small>Copyright &copy; Game Hub 2023</small></p>
-	</footer>
+		<footer>
+			<ul class="footer_some">
+				<li>
+					<div class="some">
+						<a href="https://www.twitch.tv/"><iconify-icon icon="mdi:twitch" width="2em"></iconify-icon>
+						</a>
+						<a href="https://www.instagram.com/"><iconify-icon icon="mdi:instagram" width="2em"></iconify-icon>
+						</a>
+						<a href="https://www.tiktok.com/"><iconify-icon icon="ic:baseline-tiktok"
+								width="2em"></iconify-icon>
+						</a>
+						<a href="https://discord.com/"><iconify-icon icon="ic:baseline-discord" width="2em"></iconify-icon>
+						</a>
+					</div>
+					<span class="text">Connect with the community</span>
+				</li>
+			</ul>
+			<p><small>Copyright &copy; Game Hub 2023</small></p>
+		</footer>
 	</body>
 </html>

@@ -22,7 +22,12 @@ p {
     font-family: AzeretMono-Light;
 }
 
-/* NAV */
+li {
+    list-style: none;
+    text-decoration: none;
+  }
+
+/* --------- NAV -------------------- */
 nav a {
     padding: 0.2rem;
     color: black;
@@ -35,11 +40,6 @@ nav a {
     color: #59BED3;
     text-decoration: underline;
 } 
-
-li {
-    list-style: none;
-    text-decoration: none;
-  }
 
 .nav {
     display: flex;
@@ -66,7 +66,7 @@ li {
 .nav-items {
     flex-grow: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     @media (max-width: 700px) {
         display: none;
     }
@@ -80,6 +80,9 @@ li {
     padding: 0 0.5em;
   }
   
+.icon {
+    font-size: 2rem;
+}
 
 .search-container .nav {
     display: flex;
@@ -105,6 +108,17 @@ li {
     text-decoration: underline;
 }
 
+.form_input {
+    background-color: #B2DCDD;
+    border: none;
+    border-radius: 0px;
+    line-height: 2.5em;
+    text-align: left;
+    padding-left: 0.8rem;
+    margin: 0.5rem;
+    margin-right: 0.1rem;
+}
+
 /* -------- Buttons --------------*/
 .button {
     border-width: 0.2rem;
@@ -115,6 +129,7 @@ li {
     line-height: 120%;
     padding: 0.8rem;
     text-decoration: none;
+    
 }
 
 .button:hover {
@@ -134,16 +149,6 @@ li {
     border-style: none;
 }
 
-.form_input {
-    background-color: #B2DCDD;
-    border: none;
-    border-radius: 0px;
-    line-height: 2.5em;
-    text-align: left;
-    padding-left: 0.8rem;
-    margin: 0.5rem;
-    margin-right: 0.1rem;
-}
 
 /* ------------ Hero Banner ----------------------*/
 .heroh1 {
@@ -154,7 +159,7 @@ li {
 }
 
 .hero_banner {
-    background-image: url(../images/hero_banner_assasin-creed-valhalla.jpg);
+    background-image: url(../images/hero_v5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -182,7 +187,7 @@ li {
 }
 
 
-/*Footer*/
+/* ----------- Footer ---------------- */
 footer {
     background-image: url(../images/footer_banner.jpg);
     background-repeat: no-repeat;
@@ -203,11 +208,10 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-.footer_nav a {
+.footer_some a {
     text-decoration: none;
     color:black; 
 }
-
 
 /*-------- Site specific css:::::: ----------- */
 
@@ -229,6 +233,11 @@ footer li a:hover {
     padding-left: 3em;
 }
 
+.category_navigation {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .product_list {
     max-width: 100%;
     display: grid;
@@ -238,12 +247,7 @@ footer li a:hover {
     @media (max-width: 1100px) {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
     }
-
 } 
-
-.category_navigation {
-    text-align: center;
-}
 
 .game_card {
     padding: 1em;
@@ -251,19 +255,62 @@ footer li a:hover {
     margin: 1em;
 }
 
-.allgames_button {
+.allgames_button { 
     padding: 2em;
+    text-align: center;
+}
+
+.adventure_games {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 25rem));
+    gap: 2rem; 
+}
+
+.action_games {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 25rem));
+    gap: 2rem; 
+}
+
+.family_games {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 25rem));
+    gap: 2rem;
+}
+
+.sports_games {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 25rem));
+    gap: 2rem;
+}
+
+.games-h1 {
+    text-decoration: none;
+    padding-bottom: 1rem;
 }
 
 /* -------------- gamedetail.html -------------- */
 .game-detail-page {
-    display: flex;
+    display: flex;;
     max-width: 1020px;
-    margin: 0 atuo;
+    margin: 0 auto;
     padding-bottom: 2em;
+
 }
 
-/* ------------ cart.html ---------------- */
+/* ------------------ cart.html ---------------- */
+.in-cart-page {
+    display: flex-block;
+    align-items: center;
+    max-width: 43rem;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
 
 .cart-h1 {
     text-transform: uppercase;
@@ -273,6 +320,7 @@ footer li a:hover {
     font-size: large;
     letter-spacing: 0.2rem;
 }
+
 
 .in-cart {
     margin: 80px auto;
@@ -284,15 +332,45 @@ table {
 }
 
 
-/* payment.html */
+/* ------------- payment.html --------------------- */
 .checkout-buttons, .cart-buttons, .success-button, .signin-buttons {
     padding-top: 2rem;
     padding-bottom: 2rem; 
 }
 
-/* success.html */
+.payment-shipping-sections {
+    display: flex;
+    text-align: left;
+    gap: 5rem;
+    justify-content: center;
+}
 
-/* signin.html */
+.checkout-buttons, .cart-buttons{
+    text-align: right;
+    margin-right: 9rem;
+}
+
+/* --------------- success.html --------------------- */
+.success-page {
+    display: flex-block;
+    text-align: center;
+}
+
+.success-icon {
+    color: #59d365;
+    font-size: 9rem;
+}
+
+/* ---------------- signin.html --------------------- */
+.sign-in-page {
+    display: flex-block;
+    align-items: center;
+    max-width: 43rem;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+    
+}
 
 .h1-welcome {
     text-decoration-line: underline;
@@ -305,14 +383,36 @@ table {
 }
 
 
-/* about.html */ 
+/* ---------------- about.html ---------------------- */ 
 
 .about_some {
     display: flex;
-    text-decoration: none;
+    justify-content: center;
     color: #000000;
 }
 
+.about-page {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 1rem;
+    justify-content:center;
+}
 
-/* contact.html */ 
+/*  ------------------ contact.html -----------------*/ 
+.contact-page {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 1rem;
+    justify-content:center;
+}
 
+
+h1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F0CA00;
+}
