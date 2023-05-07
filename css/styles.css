@@ -9,11 +9,9 @@
     src: local(AzeretMono-Light),
     url("../fonts/AzeretMono-Light.ttf") format("truetype");
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: kingdom;
 }
@@ -26,6 +24,12 @@ li {
     list-style: none;
     text-decoration: none;
   }
+
+  h1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #F0CA00;
+}
 
 /* --------- NAV -------------------- */
 nav a {
@@ -44,32 +48,18 @@ nav a {
 .nav {
     display: flex;
     align-items: center;
-    @media (max-width: 700px) {
-        flex-direction: column;
-      }
   }
 
 .header-items {
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
-    @media (max-width: 700px) {
-        
-      }
 }
-.hamburger {
-    display: none;
-    @media (max-width: 700px) {
-        display: block;
-    }
-}
+
 .nav-items {
     flex-grow: 1;
     display: flex;
     justify-content: space-evenly;
-    @media (max-width: 700px) {
-        display: none;
-    }
 }
 .nav-item {
     display: flex;
@@ -151,12 +141,7 @@ nav a {
 
 
 /* ------------ Hero Banner ----------------------*/
-.heroh1 {
-    color: white;
-    position: center;
-    padding-top: 15rem;
-    padding-bottom: 1rem;
-}
+
 
 .hero_banner {
     background-image: url(../images/hero_v5.jpg);
@@ -166,15 +151,24 @@ nav a {
     min-height: 600px;
 }
 
+.hero-wrapper {
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.heroh1 {
+    color: white;
+    position: center;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+}
+
 .hero_button_container {
     display: grid; 
     padding: 1.2rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
     gap: 2rem;
     justify-content: center;
-    @media (max-width: 1100px) and (min-width: 700px){
-        grid-template-columns: repeat(2, minmax(10rem, 15rem));
-    }
 }
 
 .hero_banner p {
@@ -199,7 +193,8 @@ footer {
 }
 
 footer li {
-    display:inline-block;
+    display:inline-blo
+    ck;
     text-decoration: none;
 }
 
@@ -236,6 +231,11 @@ footer li a:hover {
 .category_navigation {
     text-align: center;
     padding-bottom: 1rem;
+    display: grid; 
+    padding: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+    gap: 2rem;
+    justify-content: center;
 }
 
 .product_list {
@@ -244,9 +244,6 @@ footer li a:hover {
     grid-template-columns: repeat(3, minmax(20rem, 25rem));
     gap: 2rem; 
     justify-content: center;
-    @media (max-width: 1100px) {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
-    }
 } 
 
 .game_card {
@@ -291,6 +288,7 @@ footer li a:hover {
 .games-h1 {
     text-decoration: none;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 /* -------------- gamedetail.html -------------- */
@@ -399,8 +397,20 @@ table {
     padding: 1rem;
     justify-content:center;
 }
+.star-logo {
+    text-align: center;
+}
 
+.about-us-info {
+    max-width: 40rem;
+    min-width: 10rem;
+}
 /*  ------------------ contact.html -----------------*/ 
+.contact-button {
+    display: block;
+    margin: 0.5rem;
+}
+
 .contact-page {
     display: flex;
     align-items: center;
@@ -410,9 +420,70 @@ table {
     justify-content:center;
 }
 
-
-h1 {
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: #F0CA00;
+.form {
+    min-width: 40rem;
 }
+
+/* -------------- media queries ------------------- */
+
+@media (max-width: 700px){
+    
+    .hero_button_container, .category_navigation {
+        grid-template-columns: repeat(1, minmax(10rem, 15rem));
+    }
+
+    .nav {
+    flex-direction: column;
+    }
+
+    .contact-page, .about-page {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px){
+
+    .nav {
+        flex-direction: column;
+        }
+
+    .contact-page, .about-page {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .hero_button_container, .category_navigation {
+    grid-template-columns: repeat(2, minmax(10rem, 15rem));
+    }
+
+    .product_list, .action_games, .adventure_games, .family_games, .sports_games {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+        grid-column: auto;
+        justify-content: center;
+    }
+
+    .contact-page, .about-page {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .product_list, .action_games, .adventure_games, .family_games, .sports_games {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+        grid-column: auto;
+        justify-content: center;
+    }
+ 
+}
+
+/* .contact-page {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; */
