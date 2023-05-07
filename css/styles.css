@@ -1,19 +1,28 @@
 @font-face {
     font-family: kingdom;
     src: local(kingdom),
-    url("../fonts/kingdom.ttf") format("truetype");
+        url("../fonts/kingdom.ttf") format("truetype");
 }
 
 @font-face {
     font-family: AzeretMono-Light;
     src: local(AzeretMono-Light),
-    url("../fonts/AzeretMono-Light.ttf") format("truetype");
+        url("../fonts/AzeretMono-Light.ttf") format("truetype");
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: kingdom;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 p {
@@ -23,9 +32,9 @@ p {
 li {
     list-style: none;
     text-decoration: none;
-  }
+}
 
-  h1 {
+h1 {
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: #F0CA00;
@@ -40,15 +49,16 @@ nav a {
     list-style-type: none;
 }
 
- nav a:hover, li:hover {
+nav a:hover,
+li:hover {
     color: #59BED3;
     text-decoration: underline;
-} 
+}
 
 .nav {
     display: flex;
     align-items: center;
-  }
+}
 
 .header-items {
     flex-grow: 1;
@@ -61,6 +71,7 @@ nav a {
     display: flex;
     justify-content: space-evenly;
 }
+
 .nav-item {
     display: flex;
     flex-direction: column;
@@ -68,8 +79,8 @@ nav a {
     text-decoration: none;
     color: inherit;
     padding: 0 0.5em;
-  }
-  
+}
+
 .icon {
     font-size: 2rem;
 }
@@ -77,23 +88,23 @@ nav a {
 .search-container .nav {
     display: flex;
     align-items: center;
-  }
+}
 
- .search_field {
-     background-color: #EFF9FB;
-     border: none;
-     border-radius: 40px;
-     line-height: 2.5em;
-     text-align: left;
-     padding-left: 0.8rem;
-     margin-right: 0.1rem;
- }
- 
+.search_field {
+    background-color: #EFF9FB;
+    border: none;
+    border-radius: 40px;
+    line-height: 2.5em;
+    text-align: left;
+    padding-left: 0.8rem;
+    margin-right: 0.1rem;
+}
+
 .search_button {
     border: none;
     background-color: white;
- }
- 
+}
+
 .active {
     text-decoration: underline;
 }
@@ -119,7 +130,7 @@ nav a {
     line-height: 120%;
     padding: 0.8rem;
     text-decoration: none;
-    
+
 }
 
 .button:hover {
@@ -164,7 +175,7 @@ nav a {
 }
 
 .hero_button_container {
-    display: grid; 
+    display: grid;
     padding: 1.2rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
     gap: 2rem;
@@ -172,7 +183,7 @@ nav a {
 }
 
 .hero_banner p {
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
@@ -193,19 +204,18 @@ footer {
 }
 
 footer li {
-    display:inline-blo
-    ck;
+    display: inline-blo ck;
     text-decoration: none;
 }
 
 footer li a:hover {
-    color:darkcyan;
+    color: darkcyan;
     text-decoration: underline;
 }
 
 .footer_some a {
     text-decoration: none;
-    color:black; 
+    color: black;
 }
 
 /*-------- Site specific css:::::: ----------- */
@@ -221,7 +231,7 @@ footer li a:hover {
 
 .game_category_banner {
     background-image: url(../images/banner_turkis_smal.jpg);
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     text-align: left;
     background-size: cover;
     padding-top: 0.5em;
@@ -231,7 +241,7 @@ footer li a:hover {
 .category_navigation {
     text-align: center;
     padding-bottom: 1rem;
-    display: grid; 
+    display: grid;
     padding: 1.2rem;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
     gap: 2rem;
@@ -242,9 +252,9 @@ footer li a:hover {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, minmax(20rem, 25rem));
-    gap: 2rem; 
+    gap: 2rem;
     justify-content: center;
-} 
+}
 
 .game_card {
     padding: 1em;
@@ -252,7 +262,7 @@ footer li a:hover {
     margin: 1em;
 }
 
-.allgames_button { 
+.allgames_button {
     padding: 2em;
     text-align: center;
 }
@@ -261,14 +271,14 @@ footer li a:hover {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(20rem, 25rem));
-    gap: 2rem; 
+    gap: 2rem;
 }
 
 .action_games {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, minmax(20rem, 25rem));
-    gap: 2rem; 
+    gap: 2rem;
 }
 
 .family_games {
@@ -293,7 +303,7 @@ footer li a:hover {
 
 /* -------------- gamedetail.html -------------- */
 .game-detail-page {
-    display: flex;;
+    display: flex;
     max-width: 1020px;
     margin: 0 auto;
     padding-bottom: 2em;
@@ -331,9 +341,12 @@ table {
 
 
 /* ------------- payment.html --------------------- */
-.checkout-buttons, .cart-buttons, .success-button, .signin-buttons {
+.checkout-buttons,
+.cart-buttons,
+.success-button,
+.signin-buttons {
     padding-top: 2rem;
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem;
 }
 
 .payment-shipping-sections {
@@ -343,7 +356,8 @@ table {
     justify-content: center;
 }
 
-.checkout-buttons, .cart-buttons{
+.checkout-buttons,
+.cart-buttons {
     text-align: right;
     margin-right: 9rem;
 }
@@ -367,7 +381,7 @@ table {
     justify-content: center;
     padding: 1rem;
     margin: 0 auto;
-    
+
 }
 
 .h1-welcome {
@@ -381,7 +395,7 @@ table {
 }
 
 
-/* ---------------- about.html ---------------------- */ 
+/* ---------------- about.html ---------------------- */
 
 .about_some {
     display: flex;
@@ -395,8 +409,9 @@ table {
     text-align: center;
     gap: 5rem;
     padding: 1rem;
-    justify-content:center;
+    justify-content: center;
 }
+
 .star-logo {
     text-align: center;
 }
@@ -405,7 +420,8 @@ table {
     max-width: 40rem;
     min-width: 10rem;
 }
-/*  ------------------ contact.html -----------------*/ 
+
+/*  ------------------ contact.html -----------------*/
 .contact-button {
     display: block;
     margin: 0.5rem;
@@ -417,7 +433,7 @@ table {
     text-align: center;
     gap: 5rem;
     padding: 1rem;
-    justify-content:center;
+    justify-content: center;
 }
 
 .form {
@@ -425,61 +441,80 @@ table {
 }
 
 /* -------------- media queries ------------------- */
-@media (max-width: 700px){
-    
-    .hero_button_container, .category_navigation {
+@media (max-width: 700px) {
+
+    .hero_button_container,
+    .category_navigation {
         grid-template-columns: repeat(1, minmax(10rem, 15rem));
     }
 
     .nav {
-    flex-direction: column;
+        flex-direction: column;
     }
 
-    .contact-page, .about-page {
+    .contact-page,
+    .about-page {
         flex-wrap: wrap;
     }
 
     .search-container {
         display: none;
     }
-}
 
-@media (max-width: 900px){
-
-    .nav {
-        flex-direction: column;
-        }
-
-    .contact-page, .about-page {
+    .game-detail-page,
+    .in-cart-page,
+    .payment-shipping-sections {
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 900px) {
 
-    .hero_button_container, .category_navigation {
-    grid-template-columns: repeat(2, minmax(10rem, 15rem));
+    .nav {
+        flex-direction: column;
     }
 
-    .product_list, .action_games, .adventure_games, .family_games, .sports_games {
+    .contact-page,
+    .about-page {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .hero_button_container,
+    .category_navigation {
+        grid-template-columns: repeat(2, minmax(10rem, 15rem));
+    }
+
+    .product_list,
+    .action_games,
+    .adventure_games,
+    .family_games,
+    .sports_games {
         grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
         grid-column: auto;
         justify-content: center;
     }
 
-    .contact-page, .about-page {
+    .contact-page,
+    .about-page {
         flex-wrap: wrap;
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
-    .product_list, .action_games, .adventure_games, .family_games, .sports_games {
+    .product_list,
+    .action_games,
+    .adventure_games,
+    .family_games,
+    .sports_games {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
         grid-column: auto;
         justify-content: center;
     }
- 
+
 }
 
 /* .contact-page {
